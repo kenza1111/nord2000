@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nord2000"
+version = "0.1.0"
+description = "Python implementation of the Nord2000 outdoor sound propagation model"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.21", "scipy>=1.7"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["nord2000"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
